@@ -43,7 +43,7 @@ class ImageResizer {
 
         if (disable) return
 
-        sizes.sort((a, b) {
+        sizes.sort((a, b) => {
             if (a > b) {
                 return 1
             } else {
