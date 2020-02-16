@@ -15,10 +15,11 @@ const defaultOptions = {
     to: 'public',
     sizes: [
         414,
-        728,
+        768,
+        828,
         1024,
         1280,
-        1456,
+        1536,
         1600
     ],
     webp: true,

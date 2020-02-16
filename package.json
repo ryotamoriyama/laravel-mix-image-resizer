@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-image-resizer",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Create resized images",
   "main": "index.js",
   "scripts": {
