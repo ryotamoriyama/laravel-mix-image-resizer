@@ -3,6 +3,7 @@ const fs = require('fs-extra')
 const path = require('path')
 const glob = require('glob')
 const sharp = require('sharp')
+const imageSize = require('image-size')
 const imagemin = require('imagemin')
 const imageminJpegtran = require('imagemin-jpegtran')
 const imageminPngquant = require('imagemin-pngquant')
@@ -57,6 +58,7 @@ class ImageResizer {
             }
 
             let {root, dir, base, ext, name} = path.parse(imagePath)
+            let width = imageSize(imagePath).width
             sizes.forEach((w) => {
                 if (width < w) {
                     return
