@@ -16,7 +16,7 @@ let mix = require('laravel-mix')
 require('laravel-mix-image-size-checker')
 
 mix
-  .ImageSizeResizer({
+  .ImageResizer({
     from: 'resources/assets/images',
     to: 'public/assets/images',
   })
